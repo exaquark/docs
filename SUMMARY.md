@@ -5,7 +5,6 @@
 * [Vision](README.md)
 * [User Tutorials](user-guides.md)
 * [Developer Tutorials](guides.md)
-* Protocol
 
 ## Developer Docs
 
@@ -15,6 +14,7 @@
   * Notifications from exaQuark
   * Sending updates
 * Advanced
+  * Protocol
 
 ## Methods
 
