@@ -3,6 +3,7 @@
 ## Overview
 
 * [Vision](README.md)
+* [Guides](guides.md)
 
 ## Methods
 
