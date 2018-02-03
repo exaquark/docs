@@ -12,7 +12,7 @@
   * [Entity State](/entity-state.md)
   * [Getting Started](getting-started.md)
   * Notifications from exaQuark
-  * Sending updates
+  * [Sending updates](sending-updates.md)
 * Advanced
   * [Protocol](protocol.md)
 
