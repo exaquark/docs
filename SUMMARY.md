@@ -9,7 +9,7 @@
 ## Developer Docs
 
 * [JS SDK](js-sdk.md)
-* [Entity State](/entity-state.md)
+  * [Entity State](/entity-state.md)
 
 ## Methods
 
