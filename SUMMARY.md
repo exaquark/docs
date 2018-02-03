@@ -3,7 +3,8 @@
 ## Overview
 
 * [Vision](README.md)
-* [Guides](guides.md)
+* [User Guides](user-guides.md)
+* [Developer Guides](guides.md)
 
 ## Methods
 
