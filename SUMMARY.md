@@ -14,11 +14,9 @@
   * Notifications from exaQuark
   * Sending updates
 * Advanced
-  * Protocol
+  * [Protocol](protocol.md)
 
 ## Methods
 
 * [Defining Methods](methods.md)
-
-
 
