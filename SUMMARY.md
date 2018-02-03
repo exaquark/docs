@@ -11,7 +11,7 @@
 * [JS SDK](js-sdk.md)
   * [Entity State](/entity-state.md)
   * [Getting Started](getting-started.md)
-  * Notifications from exaQuark
+  * [Notifications from exaQuark](notifications-from-exaquark.md)
   * [Sending updates](sending-updates.md)
 * Advanced
   * [Protocol](protocol.md)
