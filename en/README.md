@@ -21,5 +21,4 @@ The Metaverse faces a fundamental problem: how do you build a singular, continuo
 
 The team at exaQuark have over 30 years experience in development of large scale and distributed computing. We built the worlds first P2P virtual world and helped scale to SecondLife to millions of users.
 
-We will handle the scaling, you just need to focus on the content. 
-
+We will handle the scaling, you just need to focus on the content.
