@@ -8,10 +8,11 @@
 
 ## Developer Docs
 
-* [Entity State](developers/entity-state.md))
+* [Entity State](developers/entity-state.md)
 * JS SDK
   * [Getting Started](/js-sdk/getting-started.md)
   * [Notifications from exaQuark](/js-sdk/notifications-from-exaquark.md)
   * [Sending updates](/js-sdk/sending-updates.md)
+  * [Advanced](/js-sdk/advanced.md)
 * Advanced
   * [Protocol](/developers/protocol.md)
