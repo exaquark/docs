@@ -11,8 +11,7 @@ npm install exaquark-js --save
 
 
 
-##### Before you begin
-
+##### Entity State
 
 Any time you see `{{EntityState}}` in the documentation it is referring to [Entity State](entity-state.md), which is just a JS object with standard required data.
 

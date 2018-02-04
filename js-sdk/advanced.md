@@ -3,8 +3,6 @@
 # JS SDK
 
 
-
-
 ### Advanced
 
 The SDK manages the lists of neighbors and sends via the `neighbors:x` notifications, however you can attach listeners to the following messages if you want to perform these actions yourself

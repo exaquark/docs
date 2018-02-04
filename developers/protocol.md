@@ -4,6 +4,13 @@
 A high level overview of the exaQuark protocol
 
 
+##### Entity State
+
+
+Any time you see `{{EntityState}}` in the documentation it is referring to [Entity State](entity-state.md), which is just a JS object with standard required data.
+
+We have used `{{EntityState}}` to make the docs more readable.
+
 
 {% method %}
 ## Authorise your connection
@@ -11,7 +18,6 @@ A high level overview of the exaQuark protocol
 Request the entrypoint for the Metaverse.
 
 {% sample lang="js" %}
-Make a r
 
 ```js
 var allocatorUrl = 'https://enter.exaquark.net' // required
@@ -21,7 +27,7 @@ var transport = 'WEB_SOCKET' // required: WEB_SOCKET | UDP
 
 var entryPoint = null // the url for the socket to connect to
 var iid = null // the user's instance ID for this connection
-requestEntrypoint (allocatorUrl, apiKey, universeId, transport)
+requestEntrypoint (allocatorUrl, apiKey, universeId, transport) //@TODO, change this into native JS
 .then(response => {
   entryPoint = response.entryPoint // URL for the universe which you can use to establish a socket connection
   iid = response.iid
@@ -29,7 +35,6 @@ requestEntrypoint (allocatorUrl, apiKey, universeId, transport)
 ```
 
 {% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
 
 ```go
 // @TODO
@@ -48,42 +53,6 @@ Sample response
 
 
 
-## Authorise your connection
-
-Request the entrypoint for the universe.
-
-```javascript
-
-```
-
-
-Note that the following is a representation of an entity in a dimension
-
-```javascript
-@typedef EntityState::={
-  entityId: 234234, // their entityId
-  iid: 29837928734, // instance ID
-  dimension: 234234, // which dimension is the entitiy in
-  delaunay: 1, // 1 - 5 - delaunay is not required when sending to exaQuark, however you will receive it back for your neighbors
-  geo: {
-    lat: 3.11, // lat required
-    lng: 5.33, // long required
-    altitude: 32, // altitude in meters, optional
-    rotation: { 2, 5, 19 } // optional - default facing north
-  },
-  properties: { // some of this state changes infrequently - can we optimise bandwith by sending an different call - exaquark.push('properties', {}) ?
-    avatarId: 5678923123,
-    sound: true, // false = mute
-    mic: true, // false = mute microphone
-    virtualPosition: false, // is this person physically in the position that they are in the digital universe
-    entityType: 'human' // human | bot | drone
-  },
-  dimensionState: {
-    // developer defined state for their dimension
-  }
-}
-```
-
 ## Create a socket connection
 
 Establish the connection with your location and state.
@@ -91,7 +60,7 @@ Establish the connection with your location and state.
 ```javascript
 
 // set up your initial state
-var initialState = <EntityState>
+var initialState = {{EntityState}}
 
 // append your state to the endpoint
 entryPoint += encodeURIComponent(initialState)
@@ -113,7 +82,7 @@ When you receive this list, it is the latest and most up to date
 {
   method: 'neighbors'
   neighbors: [
-    <EntityState>,
+    {{EntityState}},
     ...
   ]
 }
@@ -128,7 +97,7 @@ When you receive this list, it is the latest and most up to date
 {
   method: 'updates'
   neighbors: [
-    <EntityState>,
+    {{EntityState}},
     ...
   ]
 }
@@ -173,7 +142,7 @@ When you receive this list, it is the latest and most up to date
 ##### Update position and state
 
 ```javascript
-socket.send(JSON.stringify(<EntityState>))
+socket.send(JSON.stringify({{EntityState}}))
 ```
 
 ##### Send data to all neighbors of a given level (delauney)
