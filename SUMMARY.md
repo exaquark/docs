@@ -4,7 +4,7 @@
 
 * [Vision](README.md)
 * [User Tutorials](/guides/user-guides.md)
-* [Developer Tutorials](/guides/guides.md)
+* [Developer Tutorials](/guides/developer-guides.md)
 
 ## Developer Docs
 
