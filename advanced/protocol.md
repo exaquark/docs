@@ -11,34 +11,9 @@ A high level overview of the exaQuark protocol
 Request the entrypoint for the Metaverse.
 
 {% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
+Make a r
 
 ```js
-console.log('My first method');
-```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
-```
-
-{% common %}
-Whatever language you are using, the result will be the same.
-
-```bash
-$ My first method
-```
-{% endmethod %}
-
-
-
-## Authorise your connection
-
-Request the entrypoint for the universe.
-
-```javascript
 var allocatorUrl = 'https://enter.exaquark.net' // required
 var apiKey = 'YOUR_API_KEY' // required
 var universeId = 'TARGET_UNIVERSE_ID' // required
@@ -51,6 +26,34 @@ requestEntrypoint (allocatorUrl, apiKey, universeId, transport)
   entryPoint = response.entryPoint // URL for the universe which you can use to establish a socket connection
   iid = response.iid
 })
+```
+
+{% sample lang="go" %}
+Here is how to print a message to `stdout` using Go.
+
+```go
+// @TODO
+```
+
+{% common %}
+Sample response
+
+```js
+{
+  "entryPoint": "999.999.999.999", // an IP address for the socket to connect to
+  "iid": "ljsdf923-123kasd912-123-123" // your instance ID for this connection
+}
+```
+{% endmethod %}
+
+
+
+## Authorise your connection
+
+Request the entrypoint for the universe.
+
+```javascript
+
 ```
 
 
