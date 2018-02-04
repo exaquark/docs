@@ -15,7 +15,3 @@
   * [Sending updates](/js-sdk/sending-updates.md)
 * Advanced
   * [Protocol](/developers/protocol.md)
-
-## Methods
-
-* [Defining Methods](methods.md)
