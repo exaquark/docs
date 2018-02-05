@@ -4,7 +4,7 @@ The following is a representation of an entity in a universe. It is the standard
 
 Any time you see `{{EntityState}}` in the documentation it is referring to the following format.
 
-```javascript
+```js
 {
   entityId: 'MOCK_ENTITY_ID', // {string} required: their entityId
   iid: 'MOCK_IID', // {string} required: instance ID - each user can have multiple "instances". For example they can be logged in to their browser and their phone at the same time
