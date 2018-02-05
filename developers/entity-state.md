@@ -14,7 +14,7 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
     lat: 3.11, // {double} required: latitude
     lng: 5.33, // {double} required: longitude
     altitude: 32.1, // {double} optional: altitude in meters - can be negative
-    rotation: { 2, 5, 19 } // {Object of doubles} optional: all in degrees. Default facing north
+    rotation: [ 2, 5, 19 ] // {Array of doubles} optional: all in degrees. Default facing north
   },
   properties: {
     avatarId: 'MOCK_AVATAR_ID', // {string} required: the avatar your user has selected
@@ -29,3 +29,6 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
   }
 }
 ```
+
+
+
