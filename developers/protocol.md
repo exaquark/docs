@@ -61,9 +61,10 @@ Establish the connection with your location and state.
 
 // set up your initial state
 var initialState = {{EntityState}}
+var encodedState = encodeURIComponent(initialState)
 
 // append your state to the endpoint
-entryPoint += encodeURIComponent(initialState)
+var url = `${entryPoint}?state=${encodedState}`
 var socket = new WebSocket(url)
 ```
 
