@@ -1,7 +1,4 @@
-
-
 # JS SDK
-
 
 ## Installation
 
@@ -9,28 +6,23 @@
 npm install exaquark-js --save
 ```
 
-
-
 ##### Entity State
 
 Any time you see `{{EntityState}}` in the documentation it is referring to [Entity State](entity-state.md), which is just a JS object with standard required data.
 
 We have used `{{EntityState}}` to make the docs more readable.
 
-
-
 ## Usage
-
 
 ##### Set up
 
 ```javascript
 const exaQuarkJs = require('exaquark-js')
-var apiKey = 'YOUR_API_KEY' // required
+var apiKey = 'YOUR_API_KEY' // {String} required
 let options = {
-  entityId: ENTITY_ID, // required
-  universe: UNIVERSE_ID, // optional: defaults to sandbox
-  transport: 'WebSocket', // optional: WebSocket | UDP
+  entityId: 'ENTITY_ID', // {String} required
+  universe: 'UNIVERSE_ID', // {String} optional: defaults to sandbox
+  transport: 'WebSocket', // {String} optional: WebSocket | UDP
   logger: (msg, data) => { console.log(msg, data) }, // optional: attach your own logger
 }
 var iid = null // exaQuark will generate - A user can have multiple instance ID's (eg, one for their phone, one for their AR glasses)
@@ -54,7 +46,6 @@ exaQuark.on("data", data => {
 })
 ```
 
-
 ##### Connect to a universe
 
 ```javascript
@@ -66,11 +57,13 @@ exaQuark.connect(initialState)
   renderNeighbors(neighbors) // example function in your app
 })
 .catch("err", err => { console.error(err)})
-
 ```
 
-
 **At any time you can get an up-to-date list of your neighbors**
+
 ```javascript
 let neighbors = exaQuark.neighbours() // Returns an array of {{EntityState}}
 ```
+
+
+
