@@ -81,7 +81,7 @@ When you receive this list, it is the latest and most up to date
 
 ```javascript
 {
-  method: 'neighbors'
+  method: 'neighbors',
   neighbors: [
     {{EntityState}},
     ...
@@ -96,7 +96,7 @@ When you receive this list, it is the latest and most up to date
 
 ```javascript
 {
-  method: 'updates'
+  method: 'updates',
   neighbors: [
     {{EntityState}},
     ...
@@ -108,7 +108,7 @@ When you receive this list, it is the latest and most up to date
 
 ```javascript
 {
-  method: 'removes'
+  method: 'removes',
   neighbors: [
     // list of entities identified by the following
     {
@@ -143,14 +143,20 @@ When you receive this list, it is the latest and most up to date
 ##### Update position and state
 
 ```javascript
-socket.send(JSON.stringify({{EntityState}}))
+socket.send(JSON.stringify({
+  method: 'update',
+  entityId: 234234,
+  iid: 29837928734, // instance ID
+  universe: 234234, // source universe
+  state: {{EntityState}}
+}))
 ```
 
 ##### Send data to all neighbors of a given level (delauney)
 
 ```javascript
 socket.send(JSON.stringify({
-  method:'data:broadcast',
+  method: 'data:broadcast',
   entityId: 234234,
   iid: 29837928734, // instance ID
   dimension: 234234, // source dimension
@@ -163,7 +169,7 @@ socket.send(JSON.stringify({
 
 ```javascript
 socket.send(JSON.stringify({
-  method:'data:private',
+  method: 'data:private',
   entityId: 234234,
   iid: 29837928734, // instance ID
   dimension: 234234, // source dimension
@@ -182,7 +188,7 @@ socket.send(JSON.stringify({
 
 ```javascript
 socket.send(JSON.stringify({
-  method:'ask:neighbors',
+  method: 'ask:neighbors',
   entityId: 234234,
   iid: 29837928734, // instance ID
 }))
