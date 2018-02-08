@@ -158,7 +158,9 @@ socket.send(JSON.stringify({
   iid: 29837928734, // instance ID
   dimension: 234234, // source dimension
   reach: 1, // 1 - 5 delauney
-  data: { }
+  data: {
+    // whatever data you want
+  }
 }))
 ```
 
@@ -176,7 +178,9 @@ socket.send(JSON.stringify({
       iid: 29837928734, // instance ID
     }
   ]
-  data: { }
+  data: { 
+    // whatever data you want
+  }
 }))
 ```
 
