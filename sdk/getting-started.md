@@ -62,7 +62,12 @@ exaQuark.connect(initialState)
 **At any time you can get an up-to-date list of your neighbors**
 
 ```javascript
-let neighbors = exaQuark.neighbours() // Returns an array of {{EntityState}}
+// Returns an dictionary of {{EntityState}}s, where the iid's are the keys
+// This is especially useful if you are wanting to directly access neighbors.
+let neighbors = exaQuark.neighbours()
+
+// // If you want your neighbours in Array format then you can pass 'Array'. eg:
+let neighborsArray = exaQuark.neighbours('Array')
 ```
 
 
