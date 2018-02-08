@@ -145,9 +145,6 @@ When you receive this list, it is the latest and most up to date
 ```javascript
 socket.send(JSON.stringify({
   method: 'update',
-  entityId: 234234,
-  iid: 29837928734, // instance ID
-  universe: 234234, // source universe
   state: {{EntityState}}
 }))
 ```
