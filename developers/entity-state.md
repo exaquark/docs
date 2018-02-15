@@ -17,7 +17,8 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
     rotation: [ 2, 5, 19 ] // {Array of doubles} optional: all in degrees. Default facing north
   },
   properties: {
-    avatarId: 'MOCK_AVATAR_ID', // {string} required: the avatar your user has selected
+    avatarId: 'MOCK_AVATAR_ID', // {string} optional: the avatar your user has selected
+    displayName: 'A_USER_NAME', // {string} required: a human readable name to be displayed
     sound: true, // {boolean} optional: defaults to true. false === mute
     mic: true, // {boolean} optional: defaults to true. false === muted microphone
     virtualPosition: false, // {boolean} optional: defaults to false. Is this person physically in the position that they are in the digital universe. (true === they are not physically present there)

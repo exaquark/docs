@@ -109,30 +109,24 @@ When you receive this list, it is the latest and most up to date
 ```javascript
 {
   method: 'removes',
-  neighbors: [
-    // list of entities identified by the following
-    {
-      entityId: 234234, // their entityId
-      iid: 29837928734, // instance ID
-      dimension: 234234, // which dimension is the entitiy in
-    }
-  ]
+  entities: [ iid, ...] // list of the iid to be removed from the neighborhood
 }
 ```
 
-##### Data is received
+##### Signal is received
 
 @TODO: explanation
 
 ```javascript
 {
-  method: 'data',
+  method: 'signal',
   source: {
     entityId: 234234,
+    private: true, // true, if it hasn't be broadcasted
     iid: 29837928734, // instance ID
     dimension: 1782687123, // which dimension this data came from
   },
-  data: {
+  signal: {
 
   }
 }
@@ -153,12 +147,12 @@ socket.send(JSON.stringify({
 
 ```javascript
 socket.send(JSON.stringify({
-  method: 'data:broadcast',
+  method: 'signal:broadcast',
   entityId: 234234,
   iid: 29837928734, // instance ID
-  dimension: 234234, // source dimension
-  reach: 1, // 1 - 5 delauney
-  data: {
+  universe: 234234, // source dimension
+  reach: 1, // 1 - 5 delaunay
+  signal: {
     // whatever data you want
   }
 }))
@@ -168,17 +162,12 @@ socket.send(JSON.stringify({
 
 ```javascript
 socket.send(JSON.stringify({
-  method: 'data:private',
+  method: 'signal:private',
   entityId: 234234,
   iid: 29837928734, // instance ID
-  dimension: 234234, // source dimension
-  neigbours: [
-    {
-      entityId: 7687686,
-      iid: 29837928734, // instance ID
-    }
-  ]
-  data: { 
+  universe: 234234, // source dimension
+  entities: [ iid, ...], // the list of recipients
+  signal: { 
     // whatever data you want
   }
 }))
