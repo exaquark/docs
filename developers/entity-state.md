@@ -24,7 +24,7 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
     virtualPosition: false, // {boolean} optional: defaults to false. Is this person physically in the position that they are in the digital universe. (true === they are not physically present there)
     entityType: 'HUMAN' // {string} optional: defaults to 'human'. Options: 'HUMAN' | 'BOT' | 'DRONE'
   },
-  universeState: {
+  customState: {
     // developer defined state for their universe
     // you can use this to pass arbitrary data to other entities in your neighborhood
   }
