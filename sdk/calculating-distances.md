@@ -1,3 +1,14 @@
+# Helpers
+
+exaquark-js comes with a series of helpers. To use any of these you can import them:
+
+```
+import exaQuarkHelpers from 'exaquark-js/helpers'
+
+// or you can import individual functions
+import { getDistanceBetweenEntities } from 'exaquark-js/helpers'
+```
+
 # Calculating Distances
 
 #### Get the distance between two entities
@@ -7,7 +18,7 @@
 * Returns the distance between two entities
 * @param {string} [options.units] - the unit of measurement. Defaults to meters
 */
-exaQuark.getDistanceBetweenEntities (entityOne, entityTwo, options)
+exaQuarkHelpers.getDistanceBetweenEntities (entityOne, entityTwo, options)
 ```
 
 #### Filter your list of neighbors by distance
@@ -19,8 +30,10 @@ exaQuark.getDistanceBetweenEntities (entityOne, entityTwo, options)
 * @param {string} [options.units] - the unit of measurement. Defaults to meters
 * @param {string} [options.listType] - the list format to return. Defaults to Dictionary. Options: "Array" | "Dict"
 */
-exaQuark.getNeighborsByMaxDistance (distance, options)
+exaQuarkHelpers.getNeighborsByMaxDistance (distance, options)
 ```
+
+
 
 
 
