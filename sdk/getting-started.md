@@ -18,6 +18,7 @@ We have used `{{EntityState}}` to make the docs more readable.
 
 ```javascript
 const exaQuarkJs = require('exaquark-js')
+const exaQuarkUrl = 'https://enter.exaquark.com'
 var apiKey = 'YOUR_API_KEY' // {String} required
 let options = {
   entityId: 'ENTITY_ID', // {String} required
@@ -26,7 +27,7 @@ let options = {
   logger: (msg, data) => { console.log(msg, data) }, // optional: attach your own logger
 }
 var iid = null // exaQuark will generate - A user can have multiple instance ID's (eg, one for their phone, one for their AR glasses)
-var exaQuark = new exaQuarkJs(apiKey, options)
+var exaQuark = new exaQuarkJs(exaQuarkUrl, apiKey, options)
 .then(response => {
   iid = response.iid
 })
