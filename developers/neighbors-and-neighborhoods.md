@@ -1,10 +1,6 @@
 # Neighbors and Neighborhoods
 
-
-
 @todo: explanation of neighborhoods and Delaunay.
-
-
 
 * Every neighbour returned with a `delaunay`
 * Delaunay is a number 1-5
