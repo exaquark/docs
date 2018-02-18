@@ -60,15 +60,11 @@ exaQuark.connect(initialState)
 .catch("err", err => { console.error(err)})
 ```
 
-**At any time you can get an up-to-date list of your neighbors**
+**At any time you can get an up-to-date array of your neighbors**
 
 ```javascript
-// Returns an dictionary of {{EntityState}}s, where the iid's are the keys
-// This is especially useful if you are wanting to directly access neighbors.
+// Returns an Array of {{EntityState}}s
 let neighbors = exaQuark.neighbours()
-
-// // If you want your neighbours in Array format then you can pass 'Array'. eg:
-let neighborsArray = exaQuark.neighbours('Array')
 ```
 
 
