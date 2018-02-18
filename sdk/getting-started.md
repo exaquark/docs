@@ -64,7 +64,7 @@ exaQuark.connect(initialState)
 
 ```javascript
 // Returns an Array of {{EntityState}}s
-let neighbors = exaQuark.neighbours()
+let neighbors = exaQuark.neighbors()
 ```
 
 
