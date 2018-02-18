@@ -1,6 +1,6 @@
 # Helpers
 
-exaquark-js comes with a series of helpers. To use any of these you can import them:
+`exaquark-js` comes with helpers for many of the more difficult functions. To use any of these you can import them:
 
 ```
 import exaQuarkHelpers from 'exaquark-js/helpers'
@@ -32,8 +32,6 @@ exaQuarkHelpers.getDistanceBetweenEntities (entityOne, entityTwo, options)
 */
 exaQuarkHelpers.getNeighborsByMaxDistance (distance, options)
 ```
-
-
 
 
 
