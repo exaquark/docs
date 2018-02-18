@@ -9,6 +9,7 @@
 ## Developer Docs
 
 * [Entity State](developers/entity-state.md)
+* [Neighbors and Neighborhoods](developers/neighbors-and-neighborhoods.md)
 * [SDK](developers/sdk.md)
   * [Getting Started](/sdk/getting-started.md)
   * [Notifications from exaQuark](/sdk/notifications-from-exaquark.md)
@@ -16,6 +17,4 @@
   * [Advanced](/sdk/advanced.md)
 * [Advanced](developers/advanced.md)
   * [Protocol](/developers/protocol.md)
-
-
 
