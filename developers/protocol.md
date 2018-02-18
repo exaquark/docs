@@ -20,7 +20,7 @@ Request the entrypoint for the Metaverse.
 {% sample lang="js" %}
 
 ```js
-var allocatorUrl = 'https://enter.exaquark.net' // required
+var allocatorUrl = 'https://enter.exaquark.com' // required
 var apiKey = 'YOUR_API_KEY' // required
 var universeId = 'TARGET_UNIVERSE_ID' // required
 var transport = 'WEB_SOCKET' // required: WEB_SOCKET | UDP
@@ -29,7 +29,7 @@ var entryPoint = null // the url for the socket to connect to
 var iid = null // the user's instance ID for this connection
 requestEntrypoint (allocatorUrl, apiKey, universeId, transport) //@TODO, change this into native JS
 .then(response => {
-  entryPoint = response.entryPoint // URL for the universe which you can use to establish a socket connection
+  entryPoint = response.entryPoint // websocket URL for the universe which you can use to establish a socket connection
   iid = response.iid
 })
 ```

@@ -3,7 +3,7 @@
 ### Binding your state
 
 Since your state and location is so important for your neighbours and you want to know what is around you, we provide functionality that will update exaQuark as frequently as required.  
-All you need to do is provide a function that will return your [Entity State](entity-state.md).
+All you need to do is provide a function that will return your [Entity State](entity-state.html).
 
 For example:
 

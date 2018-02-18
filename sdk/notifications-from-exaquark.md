@@ -5,7 +5,7 @@
 
 ### Notifications from exaQuark
 
-You will receive a array of `{{EntityState}}` for all of the following subscriptions.
+You will receive an array of `{{EntityState}}` for all of the following subscriptions.
 
 
 **Entity enters neighborhood**
@@ -36,7 +36,7 @@ exaQuark.on("neighbor:updates", {{EntityState}} => {
 ```
 **Receiving data**
 
-In some cases the developer want to pass arbitary data around to their neighbors. This can be useful if you're developing games or special interactions within your dimension/universe.
+In some cases the developer wants to pass arbitrary data around to their neighbors. This can be useful if you're developing games or special interactions within your dimension/universe.
 
 The data is received in the following format
 
