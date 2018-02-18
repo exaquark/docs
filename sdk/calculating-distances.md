@@ -1,6 +1,6 @@
 # Helpers
 
-`exaquark-js` comes with helpers for many of the more difficult functions. To use any of these you can import them:
+`exaquark-js` comes with helpers for many of the difficult spatial functions. To use these you can import them:
 
 ```
 import exaQuarkHelpers from 'exaquark-js/helpers'
