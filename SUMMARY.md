@@ -9,10 +9,11 @@
 ## Developer Docs
 
 * [Entity State](developers/entity-state.md)
-* SDK
+* [SDK](developers/sdk.md)
   * [Getting Started](/sdk/getting-started.md)
   * [Notifications from exaQuark](/sdk/notifications-from-exaquark.md)
   * [Sending updates](/sdk/sending-updates.md)
   * [Advanced](/sdk/advanced.md)
-* Advanced
+* [Advanced](developers/advanced.md)
   * [Protocol](/developers/protocol.md)
+
