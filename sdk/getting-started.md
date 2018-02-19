@@ -49,8 +49,7 @@ exaQuark.on("data", data => {
 ```javascript
 // Connect to the universe!
 let initialState = {{EntityState}} // your user's position and state
-let neighbors = []
-exaQuark.connect(this.entityState).then(({ myIid }) => {
+exaQuark.connect(initialState).then(({ myIid }) => {
   iid = myIid 
 }).catch('err', err => { console.error(err) })
 ```
