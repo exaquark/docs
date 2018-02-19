@@ -9,7 +9,7 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
   entityId: 'MOCK_ENTITY_ID', // {string} required: their entityId
   iid: 'MOCK_IID', // {string} required: instance ID - each user can have multiple "instances". For example they can be logged in to their browser and their phone at the same time
   universe: 'MOCK_UNIVERSE_ID', // {string} required:  which universe is the entitiy in
-  delaunay: 1, // {number} 1 - 5 - delaunay is the "distance" of your neighbor. It isn't required when sending to exaQuark, however you will receive it in notifications about your neighbors
+  neighborLevel: 1, // {number} 1 - 5 - the "relative distance" of your neighbor. It isn't required when sending to exaQuark, however you will receive it in notifications about your neighbors
   geo: {
     lat: 3.11, // {double} required: latitude
     lng: 5.33, // {double} required: longitude
