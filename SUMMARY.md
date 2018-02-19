@@ -14,8 +14,10 @@
   * [Getting Started](/sdk/getting-started.md)
   * [Notifications from exaQuark](/sdk/notifications-from-exaquark.md)
   * [Sending updates](/sdk/sending-updates.md)
-  * [Helpers](sdk/calculating-distances.md)
+  * [Helpers](/sdk/helpers.md)
   * [Advanced](/sdk/advanced.md)
 * [Advanced](developers/advanced.md)
   * [Protocol](/developers/protocol.md)
+
+
 
