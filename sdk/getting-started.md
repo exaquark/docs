@@ -28,9 +28,6 @@ let options = {
 }
 var iid = null // exaQuark will generate - A user can have multiple instance ID's (eg, one for their phone, one for their AR glasses)
 var exaQuark = new exaQuarkJs(exaQuarkUrl, apiKey, options)
-.then(response => {
-  iid = response.iid
-})
 
 // Subscribe to the individual neighborhood events - see "Notifications from exaQuark" below
 exaQuark.on("neighbor:enter", {{EntityState}} => {
@@ -53,11 +50,9 @@ exaQuark.on("data", data => {
 // Connect to the universe!
 let initialState = {{EntityState}} // your user's position and state
 let neighbors = []
-exaQuark.connect(initialState)
-.then(neighbors => {
-  renderNeighbors(neighbors) // example function in your app
-})
-.catch("err", err => { console.error(err)})
+exaQuark.connect(this.entityState).then(({ myIid }) => {
+  iid = myIid 
+}).catch('err', err => { console.error(err) })
 ```
 
 **At any time you can get an up-to-date array of your neighbors**
