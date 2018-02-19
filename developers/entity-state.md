@@ -21,7 +21,7 @@ Any time you see `{{EntityState}}` in the documentation it is referring to the f
     sound: true, // {boolean} optional: defaults to true. false === mute
     mic: true, // {boolean} optional: defaults to true. false === muted microphone
     virtualPosition: false, // {boolean} optional: defaults to false. Is this person physically in the position that they are in the digital universe. (true === they are not physically present there)
-    entityType: 'HUMAN' // {string} optional: defaults to 'human'. Options: 'HUMAN' | 'BOT' | 'DRONE'
+    entityType: 'HUMAN' // {string} optional: defaults to 'HUMAN'. Options: 'HUMAN' | 'BOT' | 'DRONE'
   },
   customState: {
     // developer defined state for their universe
