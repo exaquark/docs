@@ -17,7 +17,7 @@ We have used `{{EntityState}}` to make the docs more readable.
 ##### Set up
 
 ```javascript
-const exaQuarkJs = require('exaquark-js')
+const exaQuarkJs = require('exaquark-js/core')
 const exaQuarkUrl = 'https://enter.exaquark.com'
 var apiKey = 'YOUR_API_KEY' // {String} required
 let options = {
