@@ -17,15 +17,9 @@ var getCurrentState = function () {
 }
 ```
 
+If we don't receive an update from you for 30 seconds, we will close the connection.
+
 ### Sending updates
-
-**Update your neighborhood with your position and state**
-
-If you have some updates that you want to make sure have been sent immediately to your neighborhood, you can also call this function. For example, you may want to teleport to a new location and you want to notify exaQuark immediately.
-
-```javascript
-exaQuark.push('update:state', {{EntityState}})
-```
 
 **Send some arbitary data directly to your neighborhood**
 
@@ -46,6 +40,14 @@ exaquark.push('data:private', {
   iids: [ {{ARRAY_OF_RECIPIENT_IIDS}} ]
   data: { } // data to be sent
 })
+```
+
+#### Force a state update
+
+Sometime you want to immediately update your neighbors of changes \(such as when you teleport\). For this you can use the following function.
+
+```javascript
+exaQuark.push('update:state', {{EntityState}})
 ```
 
 
