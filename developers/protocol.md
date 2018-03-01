@@ -120,12 +120,8 @@ When you receive this list, it is the latest and most up to date
 ```javascript
 {
   method: 'signal',
-  source: {
-    entityId: 234234,
-    private: true, // true, if it hasn't be broadcasted
-    iid: 29837928734, // instance ID
-    dimension: 1782687123, // which dimension this data came from
-  },
+  source: '29837928734', // the instance ID of the sender
+  private: true, // true if it hasn't be broadcasted
   signal: {
 
   }
