@@ -21,8 +21,8 @@ exaQuark.on("neighbor:enter", {{EntityState}} => {
 
 Subscribe to neigbours leaving. This will be triggered any time a neighbor leaves in your neighborhood or goes offline.
 ```javascript
-exaQuark.on("neighbor:leave", {{EntityState}} => {
-  remove({{EntityState}}) // example function in your app
+exaQuark.on("neighbor:leave", {{INSTANCE_ID}} => {
+  remove({{INSTANCE_ID}}) // example function in your app
 })
 ```
 
