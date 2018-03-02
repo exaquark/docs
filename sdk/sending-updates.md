@@ -24,10 +24,10 @@ If we don't receive an update from you for 30 seconds, we will close the connect
 **Send some arbitary data directly to your neighborhood**
 
 ```javascript
-exaQuark.push('data:broadcast', {
-  dimension: {{DIMENSION_ID}}, // the dimension your user is in
-  reach: 1, // 1 - 5 delauney
-  data: { } // data to be sent
+exaQuark.push('signal:broadcast', {
+  universeId: 'UNIVERSE_ID', 
+  reach: 1, // 1 - 5 neighborhoodLevel
+  signal: { } // data to be sent
 })
 ```
 
@@ -35,10 +35,10 @@ exaQuark.push('data:broadcast', {
 
 ```javascript
 // this can only reach a user within your current neighborhood
-exaquark.push('data:private', {
-  dimension: {{DIMENSION_ID}}, // the dimension your user is in
+exaquark.push('signal:private', {
+  universeId: 'UNIVERSE_ID',
   iids: [ {{ARRAY_OF_RECIPIENT_IIDS}} ]
-  data: { } // data to be sent
+  signal: { } // data to be sent
 })
 ```
 
