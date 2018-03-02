@@ -25,7 +25,7 @@ If we don't receive an update from you for 30 seconds, we will close the connect
 
 ```javascript
 exaQuark.push('signal:broadcast', {
-  universeId: 'UNIVERSE_ID', 
+  universe: 'UNIVERSE_ID', 
   reach: 1, // 1 - 5 neighborhoodLevel
   signal: { } // data to be sent
 })
@@ -36,7 +36,7 @@ exaQuark.push('signal:broadcast', {
 ```javascript
 // this can only reach a user within your current neighborhood
 exaquark.push('signal:private', {
-  universeId: 'UNIVERSE_ID',
+  universe: 'UNIVERSE_ID',
   iids: [ {{ARRAY_OF_RECIPIENT_IIDS}} ]
   signal: { } // data to be sent
 })
