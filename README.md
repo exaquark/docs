@@ -19,7 +19,7 @@ There’s no separation between universes - users playing Pokemon Go can see and
 
 The Metaverse faces a fundamental problem: how do you build a singular, continuous world for 7 billion people, when most online games can’t scale past 10,000 users?
 
-The team at exaQuark have over 30 years experience in development of large scale and distributed computing. We built the worlds first P2P virtual world and helped scale to OpenSim to millions of users.
+The team at exaQuark have over 30 years experience in development of large scale and distributed computing. We built the worlds first P2P virtual world and helped scale to OpenSim, the opensource version of SecondLife, to millions of users.
 
 We will handle the scaling, you just need to focus on the content.
 
